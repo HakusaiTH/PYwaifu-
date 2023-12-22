@@ -10,7 +10,7 @@ import numpy as np
 
 host = "127.0.0.1"
 port = "50021"
-speaker = 8
+speaker = 8 # set you speaker
 
 
 def post_audio_query(text: str) -> dict:
