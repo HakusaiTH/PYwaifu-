@@ -2,9 +2,9 @@ from characterai import PyCAI
 from googletrans import Translator
 from VoicevoxTTS import text_to_voice
 
-client = PyCAI("1b01c1086980a7ac4ccba7d0bfed5e67087c791d")
+client = PyCAI("...")
 
-char = "Wqcpqfh-x_oWqHJJFi4noysofgpDs1zaJAPnle2vII0"
+char = "..."
 
 chat = client.chat.get_chat(char)
 
@@ -24,7 +24,7 @@ def callAI(message):
     data = client.chat.send_message(chat['external_id'], tgt, translate_text(message,"en"))
     text = data['replies'][0]['text']
 
-    message_result = translate_text(text,"th")
+    message_result = translate_text(text,"th") # you langue 
     message_result_voice = translate_text(text,"ja")
     text_to_voice(message_result_voice)  
 
