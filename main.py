@@ -19,7 +19,7 @@ def send_message(event):
 root = tk.Tk()
 root.title("Chat Program")
 
-image_path = "D:\\voicevox_and_chai\\img\\iroha.png"
+image_path = "\\img\\... .png"
 
 # Load the image file from disk.
 icon = tk.PhotoImage(file=image_path)
